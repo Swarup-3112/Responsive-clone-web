@@ -1,0 +1,499 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #0a1b2b;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+
+/* ---------------------- nav ----------------------------- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+}
+
+.nav-list{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background: #132433;
+    padding-top: 1.5rem;
+    transition: top 1s ease;
+}
+
+.nav-list li a{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+
+
+.nav-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bx{
+    font-size: 2rem;
+    color: #fff;
+}
+
+#close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.bx-menu{
+    
+    font-size: 3rem;
+}
+
+/* --------------- hero section ------------------  */
+
+
+.header{
+    padding-top: 2rem;
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.content{
+    font-size: 1.6rem;
+    color: rgb(181, 187, 191);
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.btn-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    padding:1.7rem 3.2rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 3rem;
+}
+
+.buy{
+    color: #000;
+    background-color: #fdb515;
+}
+
+.get{
+    border: 0.2rem solid #fff;
+}
+
+/* --------------- section 2 ----------------  */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section1-img{
+    max-width: 32.5rem;
+}
+
+/* ------------------- section 3 ------------  */
+
+.model-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.model{
+    width: 29.3rem;
+    border-radius: 2rem;
+    box-shadow: 2rem 2rem 0 -1rem #fdb515;
+    margin: 0 4.5rem;
+}
+
+.model-content p{
+    margin-top: 4.5rem;
+    color:#fff;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.model-content h3{
+    color: #b5bbbf;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.logo-img{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-img img{
+    width: 50%;
+}
+
+.hide-tab , .hide-phone {
+    display: none;
+}
+
+/* ----------------- section 3 ------------------  */
+
+.buy-container{
+    padding: 0 1.8rem;
+}
+.buy-template{
+    padding: 3.5rem 0 4rem;
+    background-color: #fdb515;
+    text-align: center;
+    color: #000;
+}
+
+.buy-template h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.buy-template p{
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 2.85rem;
+    margin-bottom: 3rem;
+    color: #132433;
+}
+
+.dark-buy{
+    background-color: #0a1b2b;
+    color: #fdb515;
+}
+
+/* ---------------- footer --------------------  */
+
+footer{
+    padding: 6rem 2.5rem 3rem;
+}
+
+.footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    max-width: 102rem;
+    margin: 0 auto;
+}
+
+.footer-list div{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.footer-img{
+    order: 4;
+}
+
+.footer-list div li{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    display: block;
+}
+
+.footer-list div li a{
+    color: #b5bbbf;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.2rem 0 0.5rem;    
+}
+
+.footer-end{
+    text-align:center;
+    color: #b5bbbf;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.footer-end a{
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(min-width: 768px){
+
+    .container{
+        padding: 3rem 3.5rem;
+    }
+
+    .header{
+        font-size: 5.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .content{
+        font-size: 1.7rem;
+        max-width: 55rem;
+        margin: 0 auto 3rem;
+
+    }
+
+    .btn-group{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+      }
+
+    .btn-group a{
+        margin: 0 1.5rem 0 0;
+    }
+
+    .section1{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 5rem;
+    }
+
+    .main-content{
+        display: block;
+        width: 50%;
+    }
+
+    .title{
+        text-align: left;
+    }
+
+    .tab-left{
+        text-align: left;
+    }
+    
+    .model-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .model-content{
+        max-width: 34rem;
+    }
+
+    .model-content p , .model-content h3{
+        text-align: left;
+    }
+
+    .hide-tab{
+        display: block;
+    }
+
+    .logo-img img{
+        width: 25%
+    }
+
+    .buy-template{
+        max-width: 68.1rem;
+        margin: 0 auto;
+        border-radius: 2rem;
+    }
+
+    .buy-container p{
+        max-width: 45rem;
+        margin:0 auto 3rem;
+    }
+
+    footer{
+        margin: 5rem 0 2rem 0;
+    }
+
+    .footer-list div{
+        width: 25%;
+        margin-bottom: 4rem;
+    }
+
+    .footer-img{
+        order: 0;
+    }
+    
+}
+
+@media(min-width: 991px){
+    .bx-menu , .bx-x{
+        display: none;
+    }
+
+    .hide-phone{
+        display: block;
+    }
+
+    .bold-buy{
+        min-width: 13.7rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1.6rem 3rem;
+        color: #0a1b2b;
+        background-color: #fdb515;
+        border-radius: 3rem;
+    }
+
+    .nav-list{
+        padding: 0;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+    }
+
+    .hide-pc{
+        display:none;
+    }
+
+    .header{
+        max-width: 72rem;
+        font-size: 6.4rem;
+        margin: 0 auto 3.5rem;
+    }
+
+    .main-content{
+        min-width: 31.76rem;
+    }
+
+    .title{
+            font-size: 4.8rem;
+            margin: 2rem 0 2.5rem;
+    }
+
+    .content{
+        font-size: 2rem;
+    }
+r
+    .section1-img{
+        max-width: 39.4rem;
+    }
+
+    .model{
+        min-width: 32.1rem;
+        margin: 0;
+    }
+
+    .model-content{
+        min-width: 60%;
+    }
+
+    .model-content p{
+        font-size: 3.9rem;
+        line-height: 5.8rem;
+    }
+
+    .model-content h3{
+        font-size: 2rem;
+    }
+
+    .logo-img{
+        margin:5rem auto 0;
+        max-width: 91.2rem;
+    }
+    .logo-img img {
+        width: 20%;
+    }
+
+    .buy-template{
+        padding: 9rem;
+        min-width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: left;
+    }
+
+    .buy-container{
+        width: 75%;
+    }
+
+    .buy-container h2{
+        font-size: 4.8rem;
+    }
+
+    .buy-container p{
+        margin-left: 0;
+        font-size: 2rem;
+    }
+    .footer-list div li a{
+        padding: 0;
+    }
+
+    .footer-end{
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+
+ 
+
+
